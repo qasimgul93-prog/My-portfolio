@@ -114,3 +114,30 @@ header h1 {
 .project-card h3 {
     color: #222;
 }
+.about,
+.skills {
+    padding: 30px 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+.about p {
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 15px auto;
+}
+
+.skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-list span {
+    background: #222;
+    color: #d4af37;
+    padding: 12px 20px;
+    border-radius: 8px;
+}
