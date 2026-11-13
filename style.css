@@ -285,3 +285,11 @@ header h1 {
     background: #d4af37;
     color: black;
 }
+.contact {
+    text-align: center;
+}
+
+.contact-btn {
+    display: inline-block;
+    margin: 10px;
+}
