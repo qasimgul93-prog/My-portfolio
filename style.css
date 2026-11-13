@@ -257,3 +257,31 @@ header h1 {
     padding: 12px 20px;
     border-radius: 8px;
 }
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+    margin: 20px auto;
+}
+
+.contact h2 {
+    margin-bottom: 15px;
+}
+
+.contact p {
+    margin-bottom: 25px;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 8px;
+    background: #222;
+    color: gold;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.contact-btn:hover {
+    background: #d4af37;
+    color: black;
+}
