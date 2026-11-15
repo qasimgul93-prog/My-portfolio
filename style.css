@@ -238,3 +238,26 @@ header h1 {
         linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)),
         url("images/contact-bg.jpg");
 }
+
+/* Navigation Bar */
+.navbar {
+    background: #111;
+    padding: 18px 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: gold;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 8px;
+}
+
+.navbar a:hover {
+    color: white;
+}
