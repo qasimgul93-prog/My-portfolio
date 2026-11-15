@@ -196,3 +196,20 @@ header h1 {
         height: auto;
     }
 }
+
+header {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    inset: -10px;
+    background-image: url("images/home-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(6px);
+    z-index: -1;
+}
