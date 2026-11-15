@@ -11,37 +11,36 @@ body {
     color: #172554;
 }
 
-/* Background image and blur for all sections */
+
+/* Common blur settings */
 header,
 .about,
 .skills,
 .gallery-section,
-.contact,
-.projects {
+.projects,
+.contact {
     position: relative;
     isolation: isolate;
     overflow: hidden;
-    background: transparent;
 }
 
-/* Blurred background layer */
 header::before,
 .about::before,
 .skills::before,
 .gallery-section::before,
-.contact::before,
-.projects::before {
+.projects::before,
+.contact::before {
     content: "";
     position: absolute;
-    inset: -8px;
+    inset: -10px;
     z-index: -1;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: blur(10px);
+    filter: blur(8px);
 }
 
-/* Individual background images */
+/* Separate background images */
 header::before {
     background-image: url("images/home-bg.jpg");
 }
