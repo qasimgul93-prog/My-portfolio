@@ -210,6 +210,6 @@ header::before {
     background-image: url("images/home-bg.jpg");
     background-size: cover;
     background-position: center;
-    filter: blur(6px);
+    filter: blur(10px);
     z-index: -1;
 }
