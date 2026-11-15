@@ -11,54 +11,6 @@ body {
     color: #172554;
 }
 
-
-/* Common blur settings */
-header,
-.about,
-.skills,
-.gallery-section,
-.projects,
-.contact {
-    position: relative;
-    isolation: isolate;
-    overflow: hidden;
-}
-
-header::before,
-.about::before,
-.skills::before,
-.gallery-section::before,
-.projects::before,
-.contact::before {
-    content: "";
-    position: absolute;
-    inset: -10px;
-    z-index: -1;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: blur(8px);
-}
-
-/* Separate background images */
-header::before {
-    background-image: url("images/home-bg.jpg");
-}
-
-.about::before {
-    background-image: url("images/about-bg.jpg");
-}
-
-.skills::before,
-.gallery-section::before,
-.projects::before {
-    background-image: url("images/services-bg.jpg");
-}
-
-.contact::before {
-    background-image: url("images/contact-bg.jpg");
-}
-
 /* Home */
 header {
     color: white;
@@ -223,4 +175,56 @@ header h1 {
         max-width: 100%;
         height: auto;
     }
+}
+
+/* Make section backgrounds blurred */
+.about,
+.skills,
+.gallery-section,
+.projects,
+.contact {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+/* Blurred image layer */
+.about::before,
+.skills::before,
+.gallery-section::before,
+.projects::before,
+.contact::before {
+    content: "";
+    position: absolute;
+    inset: -10px;
+    z-index: -1;
+    filter: blur(8px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* About background */
+.about::before {
+    background-image: url("images/about-bg.jpg");
+}
+
+/* Skills background */
+.skills::before {
+    background-image: url("images/services-bg.jpg");
+}
+
+/* Gallery background */
+.gallery-section::before {
+    background-image: url("images/services-bg.jpg");
+}
+
+/* Projects background */
+.projects::before {
+    background-image: url("images/services-bg.jpg");
+}
+
+/* Contact background */
+.contact::before {
+    background-image: url("images/contact-bg.jpg");
 }
