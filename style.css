@@ -338,3 +338,48 @@ header {
     background-position: center;
     background-repeat: no-repeat;
 }
+/* Background image settings for all sections */
+header,
+.about,
+.skills,
+.gallery-section,
+.contact,
+.projects {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    position: relative;
+    padding: 50px 25px;
+    min-height: 250px;
+}
+
+/* Home */
+header {
+    background-image: url("images/home-bg.jpg");
+}
+
+/* About */
+.about {
+    background-image: url("images/about-bg.jpg");
+}
+
+/* Skills */
+.skills {
+    background-image: url("images/services-bg.jpg");
+}
+
+/* Gallery */
+.gallery-section {
+    background-image: url("images/services-bg.jpg");
+}
+
+/* Contact */
+.contact {
+    background-image: url("images/contact-bg.jpg");
+}
+
+/* Projects */
+.projects {
+    background-image: url("images/services-bg.jpg");
+}
