@@ -383,3 +383,11 @@ header {
 .projects {
     background-image: url("images/services-bg.jpg");
 }
+header,
+.about,
+.skills,
+.gallery-section,
+.contact,
+.projects {
+    color: white;
+}
