@@ -206,25 +206,35 @@ header h1 {
 
 /* About background */
 .about::before {
-    background-image: url("images/about-bg.jpg");
+    background-image:
+        linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)),
+        url("images/about-bg.jpg");
 }
 
 /* Skills background */
 .skills::before {
-    background-image: url("images/services-bg.jpg");
+    background-image:
+        linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)),
+        url("images/services-bg.jpg");
 }
 
 /* Gallery background */
 .gallery-section::before {
-    background-image: url("images/services-bg.jpg");
+    background-image:
+        linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)),
+        url("images/services-bg.jpg");
 }
 
 /* Projects background */
 .projects::before {
-    background-image: url("images/services-bg.jpg");
+    background-image:
+        linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)),
+        url("images/services-bg.jpg");
 }
 
 /* Contact background */
 .contact::before {
-    background-image: url("images/contact-bg.jpg");
+    background-image:
+        linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)),
+        url("images/contact-bg.jpg");
 }
