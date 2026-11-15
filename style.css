@@ -11,237 +11,50 @@ body {
     color: #172554;
 }
 
+/* Home background */
 header {
-    background: #172554;
+    background-image: url("images/home-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: 80px 25px;
+    min-height: 300px;
 }
 
 header h1 {
     margin-bottom: 10px;
 }
 
-.gallery-section {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.gallery-section h2 {
-    margin-bottom: 25px;
-}
-
-.main-preview img {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-.main-preview h3 {
-    margin: 15px;
-}
-
-.gallery {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.thumbnail {
-    width: 180px;
-    height: 120px;
-    border: 3px solid white;
-    border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;
-    padding: 0;
-}
-
-.thumbnail img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.thumbnail:hover {
-    border-color: #2563eb;
-    transform: scale(1.05);
-}
-/* Responsive design for mobile screens */
-@media (max-width: 600px) {
-
-    body {
-        padding: 10px;
-    }
-
-    header {
-        text-align: center;
-    }
-
-    .gallery {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .gallery img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    button {
-        margin: 5px;
-        padding: 10px 15px;
-    }
-}
-.projects {
-    padding: 30px;
-    text-align: center;
-}
-
-.project-card {
-    background: #f2f2f2;
-    padding: 20px;
-    margin: 15px auto;
-    border-radius: 10px;
-    max-width: 400px;
-}
-
-.project-card h3 {
-    color: #222;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background: lightgray;
-    color: #172554;
-}
-
-header {
-    background: #172554;
-    color: white;
-    text-align: center;
-    padding: 30px;
-}
-
-header h1 {
-    margin-bottom: 10px;
-}
-
-.gallery-section {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.gallery-section h2 {
-    margin-bottom: 25px;
-}
-
-.main-preview img {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-.main-preview h3 {
-    margin: 15px;
-}
-
-.gallery {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.thumbnail {
-    width: 180px;
-    height: 120px;
-    border: 3px solid white;
-    border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;
-    padding: 0;
-}
-
-.thumbnail img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.thumbnail:hover {
-    border-color: #2563eb;
-    transform: scale(1.05);
-}
-/* Responsive design for mobile screens */
-@media (max-width: 600px) {
-
-    body {
-        padding: 10px;
-    }
-
-    header {
-        text-align: center;
-    }
-
-    .gallery {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .gallery img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    button {
-        margin: 5px;
-        padding: 10px 15px;
-    }
-}
-.projects {
-    padding: 30px;
-    text-align: center;
-}
-
-.project-card {
-    background: #f2f2f2;
-    padding: 20px;
-    margin: 15px auto;
-    border-radius: 10px;
-    max-width: 400px;
-}
-
-.project-card h3 {
-    color: #222;
-}
-.about,
-.skills {
-    padding: 30px 20px;
+/* About background */
+.about {
+    background-image: url("images/about-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
     margin: 20px auto;
     max-width: 900px;
     text-align: center;
+    color: white;
 }
 
 .about p {
     line-height: 1.8;
     max-width: 650px;
     margin: 15px auto;
+}
+
+/* Skills background */
+.skills {
+    background-image: url("images/services-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    text-align: center;
+    color: white;
 }
 
 .skill-list {
@@ -257,10 +70,72 @@ header h1 {
     padding: 12px 20px;
     border-radius: 8px;
 }
+
+/* Gallery background */
+.gallery-section {
+    background-image: url("images/services-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+}
+
+.gallery-section h2 {
+    margin-bottom: 25px;
+}
+
+.main-preview img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.main-preview h3 {
+    margin: 15px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.thumbnail {
+    width: 180px;
+    height: 120px;
+    border: 3px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumbnail:hover {
+    border-color: #2563eb;
+    transform: scale(1.05);
+}
+
+/* Contact background */
 .contact {
+    background-image: url("images/contact-bg.jpg");
+    background-size: cover;
+    background-position: center;
     text-align: center;
     padding: 50px 20px;
     margin: 20px auto;
+    color: white;
 }
 
 .contact h2 {
@@ -274,7 +149,7 @@ header h1 {
 .contact-btn {
     display: inline-block;
     padding: 12px 25px;
-    margin: 8px;
+    margin: 10px;
     background: #222;
     color: gold;
     text-decoration: none;
@@ -285,109 +160,39 @@ header h1 {
     background: #d4af37;
     color: black;
 }
-.contact {
+
+/* Projects background */
+.projects {
+    background-image: url("images/services-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 50px 30px;
     text-align: center;
-}
-
-.contact-btn {
-    display: inline-block;
-    margin: 10px;
-}
-/* About Background */
-.about {
-    background-image: url("images/about-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/* Skills Background */
-.skills {
-    background-image: url("images/services-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/* Gallery Background */
-.gallery-section {
-    background-image: url("images/services-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/* Contact Background */
-.contact {
-    background-image: url("images/contact-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/* Projects Background */
-.projects {
-    background-image: url("images/services-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-header {
-    background-image: url("images/home-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-/* Background image settings for all sections */
-header,
-.about,
-.skills,
-.gallery-section,
-.contact,
-.projects {
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    position: relative;
-    padding: 50px 25px;
-    min-height: 250px;
-}
-
-/* Home */
-header {
-    background-image: url("images/home-bg.jpg");
-}
-
-/* About */
-.about {
-    background-image: url("images/about-bg.jpg");
-}
-
-/* Skills */
-.skills {
-    background-image: url("images/services-bg.jpg");
-}
-
-/* Gallery */
-.gallery-section {
-    background-image: url("images/services-bg.jpg");
-}
-
-/* Contact */
-.contact {
-    background-image: url("images/contact-bg.jpg");
-}
-
-/* Projects */
-.projects {
-    background-image: url("images/services-bg.jpg");
-}
-header,
-.about,
-.skills,
-.gallery-section,
-.contact,
-.projects {
     color: white;
+}
+
+.project-card {
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 20px;
+    margin: 15px auto;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+/* Mobile responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery img {
+        max-width: 100%;
+        height: auto;
+    }
 }
