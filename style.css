@@ -293,24 +293,24 @@ header h1 {
     display: inline-block;
     margin: 10px;
 }
-/* Home Background */
-#home {
-    background-image: url("images/home-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 /* About Background */
-#about {
+.about {
     background-image: url("images/about-bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-/* Services Background */
-#services {
+/* Skills Background */
+.skills {
+    background-image: url("images/services-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Gallery Background */
+.gallery-section {
     background-image: url("images/services-bg.jpg");
     background-size: cover;
     background-position: center;
@@ -318,8 +318,22 @@ header h1 {
 }
 
 /* Contact Background */
-#contact {
+.contact {
     background-image: url("images/contact-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Projects Background */
+.projects {
+    background-image: url("images/services-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+header {
+    background-image: url("images/home-bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
