@@ -293,3 +293,34 @@ header h1 {
     display: inline-block;
     margin: 10px;
 }
+/* Home Background */
+#home {
+    background-image: url("images/home-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* About Background */
+#about {
+    background-image: url("images/about-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Services Background */
+#services {
+    background-image: url("images/services-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Contact Background */
+#contact {
+    background-image: url("images/contact-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
