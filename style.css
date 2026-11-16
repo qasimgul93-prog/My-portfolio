@@ -397,3 +397,25 @@ button:hover,
     font-size: 14px;
     color: #aaa;
 }
+/* Back to Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    background: gold;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    transition: 0.3s ease;
+}
+
+#backToTop:hover {
+    background: white;
+    transform: translateY(-4px);
+}
