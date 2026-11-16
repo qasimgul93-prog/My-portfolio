@@ -337,3 +337,14 @@ button:hover,
     transform: translateY(-4px);
     opacity: 0.85;
 }
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
