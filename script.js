@@ -20,3 +20,22 @@ thumbnails.forEach(function(button) {
     });
 
 });
+// Fade-in animation for website sections
+const sections = document.querySelectorAll(
+    "header, section"
+);
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+}, {
+    threshold: 0.15
+});
+
+sections.forEach((section) => {
+    section.classList.add("fade-in");
+    observer.observe(section);
+});
