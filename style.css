@@ -419,3 +419,38 @@ button:hover,
     background: white;
     transform: translateY(-4px);
 }
+
+/* Loading Screen */
+#loader {
+    position: fixed;
+    inset: 0;
+    background: #111;
+    color: gold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.loader-circle {
+    width: 55px;
+    height: 55px;
+    border: 5px solid #444;
+    border-top: 5px solid gold;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#loader.hide {
+    opacity: 0;
+    pointer-events: none;
+}
