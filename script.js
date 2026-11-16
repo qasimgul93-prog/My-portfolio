@@ -42,7 +42,7 @@ sections.forEach((section) => {
 // Back to Top Button
 const backToTop = document.getElementById("backToTop");
 
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll", function () {
     if (window.scrollY > 300) {
         backToTop.style.display = "block";
     } else {
@@ -50,9 +50,9 @@ window.addEventListener("scroll", () => {
     }
 });
 
-backToTop.addEventListener("click", () => {
+backToTop.onclick = function () {
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     });
-});
+};
