@@ -326,3 +326,14 @@ header::before {
 html {
     scroll-behavior: smooth;
 }
+/* Button Hover Animation */
+button,
+.contact-btn {
+    transition: all 0.3s ease;
+}
+
+button:hover,
+.contact-btn:hover {
+    transform: translateY(-4px);
+    opacity: 0.85;
+}
