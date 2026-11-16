@@ -322,3 +322,7 @@ header::before {
     background-repeat: no-repeat;
     filter: blur(8px);
 }
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
