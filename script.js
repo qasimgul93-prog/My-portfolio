@@ -57,15 +57,9 @@ backToTop.onclick = function () {
     });
 };
 
-// Loading Screen
+// Hide Loading Screen
 const loader = document.getElementById("loader");
 
 if (loader) {
-    window.addEventListener("load", function () {
-        loader.classList.add("hide");
-
-        setTimeout(function () {
-            loader.style.display = "none";
-        }, 500);
-    });
+    loader.style.display = "none";
 }
