@@ -57,13 +57,11 @@ backToTop.onclick = function () {
     });
 };
 
-/* Loading Screen */
 window.addEventListener("load", function () {
     const loader = document.getElementById("loader");
 
-    loader.classList.add("hide");
-
-    setTimeout(function () {
+    if (loader) {
         loader.style.display = "none";
-    }, 500);
+    }
 });
+
