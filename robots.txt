@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://qasimgul93-prog.github.io/My-portfolio/sitemap.xml
