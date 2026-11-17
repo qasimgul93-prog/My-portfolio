@@ -57,11 +57,15 @@ backToTop.onclick = function () {
     });
 };
 
-window.addEventListener("load", function () {
-    const loader = document.getElementById("loader");
+// Loading Screen
+const loader = document.getElementById("loader");
 
-    if (loader) {
-        loader.style.display = "none";
-    }
-});
+if (loader) {
+    window.addEventListener("load", function () {
+        loader.classList.add("hide");
 
+        setTimeout(function () {
+            loader.style.display = "none";
+        }, 500);
+    });
+}
