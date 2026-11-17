@@ -1,172 +1,456 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <meta name="description" content="Professional graphic designer and web developer offering creative designs and modern websites.">
-    <meta name="keywords" content="Graphic Designer, Web Developer, HTML, CSS, JavaScript, Canva">
-    <meta name="author" content="Muhammad Qasim">
+body {
+    font-family: Arial, sans-serif;
+    background: lightgray;
+    color: #172554;
+}
 
-    <title>My Portfolio | Graphic Designer & Web Developer</title>
-    <meta name="google-site-verification" content="ng8cWQwzpP2I6nbqU9q5uF2lJWkZegZw_mO9iRbni1c" />
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="style.css?v=3">
-    <meta property="og:title" content="My Portfolio | Graphic Designer & Web Developer">
-    <meta property="og:description" content="Explore my graphic design and web development projects.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://qasimgul93-prog.github.io/My-portfolio/">
-    <meta property="og:image" content="https://qasimgul93-prog.github.io/My-portfolio/portfolio-preview.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-</head>
+/* Home */
+header {
+    color: white;
+    text-align: center;
+    padding: 80px 25px;
+    min-height: 300px;
+}
 
-<body>
+header h1 {
+    margin-bottom: 10px;
+}
 
-<!-- Loading Screen -->
-<div id="loader">
-    <div class="loader-circle"></div>
-    <h2>MY PORTFOLIO</h2>
-    <p>Loading...</p>
-</div>
-    
-<nav class="navbar">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
+/* About */
+.about {
+    padding: 50px 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    text-align: center;
+    color: white;
+}
 
-    <header id="home">
-        <h1>My Portfolio | Graphic Designer & Web Developer</h1>
-        <p>Welcome to my creative gallery</p>
-    </header>
+.about p {
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 15px auto;
+}
 
-    <section class="about" id="about">
-        <h2>About Me</h2>
-        <p>
-            Hello! My name is Muhammad Qasim.
-            I am a creative graphic designer and web developer.
-            I enjoy creating beautiful designs and responsive websites.
-        </p>
+/* Skills */
+.skills {
+    padding: 50px 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    text-align: center;
+    color: white;
+}
 
-        <a href="#contact" class="contact-btn">Hire Me</a>
-    </section>
+.skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
 
-    <section class="skills" id="skills">
-        <h2>My Skills</h2>
+.skill-list span {
+    background: #222;
+    color: #d4af37;
+    padding: 12px 20px;
+    border-radius: 8px;
+}
 
-        <div class="skill-list">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Graphic Design</span>
-            <span>Canva</span>
-        </div>
-    </section>
+/* Gallery */
+.gallery-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+}
 
-    <section class="gallery-section" id="gallery">
-        <h2>My Creative Designs</h2>
+.gallery-section h2 {
+    margin-bottom: 25px;
+}
 
-        <div class="main-preview">
-            <img id="mainImage" src="images/my pic.png" alt="Creative design">
-            <h3 id="imageTitle">Creative Design 1</h3>
-        </div>
+.main-preview img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
 
-        <div class="gallery">
+.main-preview h3 {
+    margin: 15px;
+}
 
-            <button class="thumbnail"
-                data-image="images/graphic design logo.png"
-                data-title="Creative Design 1">
-                <img src="images/graphic design logo.png" alt="Creative Design 1">
-            </button>
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
 
-            <button class="thumbnail"
-                data-image="images/my pic.png"
-                data-title="Creative Design 2">
-                <img src="images/my pic.png" alt="Creative Design 2">
-            </button>
+.thumbnail {
+    width: 180px;
+    height: 120px;
+    border: 3px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0;
+}
 
-            <button class="thumbnail"
-                data-image="images/small advertise.png"
-                data-title="Creative Design 3">
-                <img src="images/small advertise.png" alt="Creative Design 3">
-            </button>
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-            <button class="thumbnail"
-                data-image="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=900"
-                data-title="Creative Design 4">
-                <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=300" alt="Colorful abstract design">
-            </button>
+.thumbnail:hover {
+    border-color: #2563eb;
+    transform: scale(1.05);
+}
 
-            <button class="thumbnail"
-                data-image="https://images.unsplash.com/photo-1545235617-9465d2a55698?w=900"
-                data-title="Creative Design 5">
-                <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?w=300" alt="Modern design">
-            </button>
+/* Contact */
+.contact {
+    padding: 50px 20px;
+    margin: 20px auto;
+    text-align: center;
+    color: white;
+}
 
-        </div>
-    </section>
+.contact h2 {
+    margin-bottom: 15px;
+}
 
-    <section class="projects" id="projects">
-        <h2>My Projects</h2>
+.contact p {
+    margin-bottom: 25px;
+}
 
-        <div class="project-card">
-            <h3>Website Design</h3>
-            <p>A simple responsive website.</p>
-        </div>
+.contact-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px;
+    background: #222;
+    color: gold;
+    text-decoration: none;
+    border-radius: 6px;
+}
 
-        <div class="project-card">
-            <h3>Graphic Design</h3>
-            <p>Creative logo and poster designs.</p>
-        </div>
+.contact-btn:hover {
+    background: #d4af37;
+    color: black;
+}
 
-        <div class="project-card">
-            <h3>JavaScript Project</h3>
-            <p>An interactive website feature.</p>
-        </div>
-    </section>
+/* Projects */
+.projects {
+    padding: 50px 30px;
+    text-align: center;
+    color: white;
+}
 
-    <section class="contact" id="contact">
-        <h2>Contact Me</h2>
-        <p>Have a project in mind? Let's work together!</p>
+.project-card {
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 20px;
+    margin: 15px auto;
+    border-radius: 10px;
+    max-width: 400px;
+}
 
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=qasimgul.93@gmail.com"
-           class="contact-btn" target="_blank">
-            Email Me
-        </a>
+/* Mobile */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
 
-        <a href="https://wa.me/923436862684"
-           class="contact-btn" target="_blank">
-            WhatsApp Me
-        </a>
-    </section>
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
 
-    <!-- Professional Footer -->
-<footer class="footer">
-    <h2>My Portfolio</h2>
-    <p>Graphic Designer & Web Developer</p>
+    .gallery img {
+        max-width: 100%;
+        height: auto;
+    }
+}
 
-    <div class="footer-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </div>
+/* Make section backgrounds blurred */
+.about,
+.skills,
+.gallery-section,
+.projects,
+.contact {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
 
-    <p class="copyright">
-        © 2026 My Portfolio. All Rights Reserved.
-    </p>
-</footer>
+/* Blurred image layer */
+.about::before,
+.skills::before,
+.gallery-section::before,
+.projects::before,
+.contact::before {
+    content: "";
+    position: absolute;
+    inset: -10px;
+    z-index: -1;
+    filter: blur(8px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
-<button id="backToTop" title="Back to Top">
-    ↑
-</button>
+/* About background */
+.about::before {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)),
+        url("images/about-bg.jpg");
+}
 
-<script src="script.js"></script>
+/* Skills background */
+.skills::before {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)),
+        url("images/services-bg.jpg");
+}
 
-</body>
-</html>
+/* Gallery background */
+.gallery-section::before {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)),
+        url("images/services-bg.jpg");
+}
+
+/* Projects background */
+.projects::before {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)),
+        url("images/services-bg.jpg");
+}
+
+/* Contact background */
+.contact::before {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)),
+        url("images/contact-bg.jpg");
+}
+
+/* Navigation Bar */
+.navbar {
+    background: #111;
+    padding: 18px 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: gold;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 8px;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+/* Professional Navigation */
+.navbar {
+    background: #111;
+    padding: 15px 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.navbar a {
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+}
+
+.navbar a:hover {
+    color: white;
+    background: #333;
+    border-radius: 5px;
+}
+
+/* Mobile Navigation */
+@media (max-width: 600px) {
+    .navbar {
+        gap: 5px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Home Background */
+header {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    inset: -10px;
+    z-index: -1;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)),
+        url("images/home-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(8px);
+}
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+/* Button Hover Animation */
+button,
+.contact-btn {
+    transition: all 0.3s ease;
+}
+
+button:hover,
+.contact-btn:hover {
+    transform: translateY(-4px);
+    opacity: 0.85;
+}
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Navigation Hover Animation */
+.navbar a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Professional Footer */
+.footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    border-top: 2px solid gold;
+}
+
+.footer h2 {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: gold;
+    text-decoration: none;
+    margin: 8px;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+    transform: translateY(-3px);
+}
+
+.copyright {
+    font-size: 14px;
+    color: #aaa;
+}
+/* Back to Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    background: gold;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    transition: 0.3s ease;
+}
+
+#backToTop:hover {
+    background: white;
+    transform: translateY(-4px);
+}
+
+/* Loading Screen */
+#loader {
+    position: fixed;
+    inset: 0;
+    background: #111;
+    color: gold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.loader-circle {
+    width: 55px;
+    height: 55px;
+    border: 5px solid #444;
+    border-top: 5px solid gold;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#loader.hide {
+    opacity: 0;
+    pointer-events: none;
+}
