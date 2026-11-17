@@ -454,6 +454,3 @@ button:hover,
     opacity: 0;
     pointer-events: none;
 }
-#loader {
-    display: none !important;
-}
